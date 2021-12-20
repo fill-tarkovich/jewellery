@@ -87,9 +87,9 @@
         }
     }
 
-    // &--nojs::before {
-    //     display: none;
-    // }
+    &--nojs::before {
+        display: none;
+    }
 }
 
 .questions__item--active::before {
