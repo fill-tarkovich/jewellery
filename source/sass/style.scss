@@ -1,3 +1,17 @@
-h1 {
-  color: red;
-}
+@import "variables";
+@import "global";
+@import "fonts";
+@import "blocks/body.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/slider.scss";
+@import "blocks/blog.scss";
+@import "blocks/questions.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";
+@import "blocks/swiper-vars.scss";
+@import "blocks/swiper.scss";
+@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+@import "blocks/popup.scss";
+@import "blocks/index-main.scss";
