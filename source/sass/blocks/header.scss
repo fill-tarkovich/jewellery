@@ -15,67 +15,6 @@
     }
 }
 
-.header__wrapper {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding-top: 30px;
-    text-align: center;
-
-    @media (max-width: 1200px) {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-    }
-
-    @media (max-width: 1023px) {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-
-    @media (max-width: 767px) {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 20px;
-    }
-}
-
-.header__wrapper--active {
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: $brown;
-}
-
-.header__wrapper svg {
-    stroke: $black;
-}
-
-.header__wrapper--active svg,
-.header__wrapper--active .header__logo svg {
-    stroke: $white;
-}
-
-.header__wrapper .header__nav-toggle,
-.header__wrapper .header__link {
-
-    &:hover svg,
-    &:focus svg {
-        stroke: $brown;
-    }
-
-    &:active svg {
-        stroke: $grey;
-    }
-}
-
-.header__wrapper--active .header__nav-toggle,
-.header__wrapper--active .header__link {
-
-    &:hover svg,
-    &:focus svg {
-        stroke: $black;
-    }
-}
 
 .header__top {
     display: flex;
@@ -418,4 +357,66 @@
             display: flex;
         }
     }
+}
+
+.header__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+  }
+
+  @media (max-width: 1023px) {
+      padding-left: 45px;
+      padding-right: 45px;
+  }
+
+  @media (max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 20px;
+  }
+}
+
+.header__wrapper--active {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: $brown;
+}
+
+.header__wrapper svg {
+  stroke: $black;
+}
+
+.header__wrapper--active svg,
+.header__wrapper--active .header__logo svg {
+  stroke: #fff;
+}
+
+.header__wrapper .header__nav-toggle,
+.header__wrapper .header__link {
+
+  &:hover svg,
+  &:focus svg {
+      stroke: $brown;
+  }
+
+  &:active svg {
+      stroke: $grey;
+  }
+}
+
+.header__wrapper--active .header__nav-toggle,
+.header__wrapper--active .header__link {
+
+  &:hover svg,
+  &:focus svg {
+      stroke: $black;
+  }
 }
