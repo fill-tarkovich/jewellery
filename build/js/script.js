@@ -21,6 +21,13 @@
   }
 })();
 'use strict';
+var filter = document.querySelector('.catalog__filter');
+var wrapper = document.querySelector('.filter__wrapper');
+var overlay = document.querySelector('.overlay');
+var filterCloseButton = document.querySelector('.filter__close-button');
+var opened = document.querySelector('filter__block--active');
+
+
 // Filter-accordion
 
 (function () {
@@ -68,7 +75,7 @@
     });
   }
 
-  if (filterCloseButton) {
+  if (filterCloseButton || onOverlay) {
     filterCloseButton.addEventListener('click', function () {
       filter.classList.remove('catalog__filter--active');
       overlay.classList.add('hidden');
@@ -77,6 +84,19 @@
     });
   }
 })();
+
+function onOverlay() {
+  overlay.addEventListener('click', function (evt) {
+    if (evt.target !== wrapper) {
+      filter.classList.remove('catalog__filter--active');
+      overlay.classList.add('hidden');
+      filterCloseButton.classList.add('hidden');
+      document.body.classList.remove('no-scroll');
+    }
+  });
+}
+
+onOverlay();
 
 'use strict';
 
