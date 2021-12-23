@@ -24,6 +24,7 @@
 var filter = document.querySelector('.catalog__filter');
 var wrapper = document.querySelector('.filter__wrapper');
 var overlay = document.querySelector('.overlay');
+var filterOpenButton = document.querySelector('.filter__open-button');
 var filterCloseButton = document.querySelector('.filter__close-button');
 var opened = document.querySelector('filter__block--active');
 
@@ -75,7 +76,7 @@ var opened = document.querySelector('filter__block--active');
     });
   }
 
-  if (filterCloseButton || onOverlay) {
+  if (filterCloseButton) {
     filterCloseButton.addEventListener('click', function () {
       filter.classList.remove('catalog__filter--active');
       overlay.classList.add('hidden');
@@ -92,11 +93,17 @@ function onOverlay() {
       overlay.classList.add('hidden');
       filterCloseButton.classList.add('hidden');
       document.body.classList.remove('no-scroll');
+      overlay.removeEventListener;
     }
   });
 }
 
-onOverlay();
+
+if (filterOpenButton) {
+  onOverlay();
+}
+
+
 
 'use strict';
 
