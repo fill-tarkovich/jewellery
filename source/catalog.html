@@ -30,14 +30,16 @@
                         <use xlink:href="img/sprite.svg#menu"></use>
                     </svg>
                 </button>
-                <a href="main.html" class="header__logo">
-                    <picture>
+                <div class="header__logo">
+                   <a href="main.html">
+                      <picture>
                       <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
                       <img src="img/logo.svg" width="66" height="66" alt="Jewellery. Логотип сайта">
                     </picture>
                   </a>
+                  </div>
                 <div class="header__user-nav">
-                    <a class="header__link header__link--login" href="#">Login</a>
+                    <a class="header__link header__link--login" href="login.html">Login</a>
                     <a class="header__link header__link--cart" href="#">
                         <span>Cart</span>
                         <span class="header__cart-counter">0</span>
@@ -149,10 +151,10 @@
                                 </div>
                                 <div class="filter__price-control">
                                     <label> $
-                                        <input type="number" name="min-price" value="55">
+                                        <input type="text" name="min-price" value="55">
                                     </label>
                                     <label> $
-                                        <input type="number" name="max-price" value="155">
+                                        <input type="text" name="max-price" value="155">
                                     </label>
                                 </div>
                             </div>
