@@ -47,4 +47,13 @@
       },
     });
   }
+
+  if(slider.querySelector('.swiper-pagination')) {
+    slider.querySelector('.swiper-pagination').addEventListener('click' ,(evt) => {
+      evt.preventDefault();
+      if(evt.target.classList.contains('swiper-pagination-bullet')) {
+        evt.target.click();
+      }
+    });
+  }
 })();
