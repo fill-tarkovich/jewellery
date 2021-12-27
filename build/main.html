@@ -16,6 +16,10 @@
   <h1 class="visually-hidden">CH Jewellery</h1>
   <header class="header">
     <div class="header__wrapper header__wrapper--nojs">
+      <picture class="header__logo">
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+        <img src="img/logo.svg" width="66" height="66" alt="Jewellery. Логотип сайта">
+      </picture>
       <div class="header__top">
         <form action="https://echo.htmlacademy.ru" method="post">
           <label for="search" aria-label="Поиск по сайту">
@@ -30,10 +34,6 @@
             <use xlink:href="img/sprite.svg#menu"></use>
           </svg>
         </button>
-          <picture class="header__logo">
-            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-            <img src="img/logo.svg" width="66" height="66" alt="Jewellery. Логотип сайта">
-          </picture>
         <div class="header__user-nav">
           <a class="header__link header__link--login" href="login.html">Login</a>
           <a class="header__link header__link--cart" href="#">

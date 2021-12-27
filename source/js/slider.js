@@ -4,6 +4,7 @@
 
 (function () {
   var slider = document.querySelector('.slider');
+  var pagination = document.querySelector('.swiper-pagination');
 
   if (slider) {
     new Swiper('.swiper', {
@@ -48,10 +49,10 @@
     });
   }
 
-  if(slider.querySelector('.swiper-pagination')) {
-    slider.querySelector('.swiper-pagination').addEventListener('click' ,(evt) => {
+  if (pagination) {
+    pagination.addEventListener('click', (evt) => {
       evt.preventDefault();
-      if(evt.target.classList.contains('swiper-pagination-bullet')) {
+      if (evt.target.classList.contains('swiper-pagination-bullet')) {
         evt.target.click();
       }
     });
